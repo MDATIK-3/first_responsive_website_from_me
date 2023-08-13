@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+Vithkuqi:wght@500&family=Poppins:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap');
+/* basic part */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  color: #000000;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.section {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Header-section */
+
+#header-section {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 6vw;
+  background-color: #adadad;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  font-size: 0.9rem;
+  text-align: center;
+  align-items: center;
+}
+
+.nav-links li,
+a {
+  display: inline-block;
+  padding: 3px 5px;
+  transition: all 300ms smooth;
+  margin: 5px;
+}
+.nav-links li:hover{
+border:.5px solid #cea135;
+padding: 2px 4px;
+background: rgb(135, 255, 255);
+border-radius: 18px;
+
+}
+.nav-logo {
+  align-self: center;
+  font-size: 1.6rem;
+  text-shadow: 8px 8px 20px #ffffff;
+  font-family: "Noto Serif Vithkuqi", serif;
+}
+
+.cart-icon {
+  font-size: 1.8rem;
+}
+
+li {
+  align-self: center;
+}
+
+/* Deshboard-section 
+ 
+    background-color: #363636;
+  */
+
+#deshboard {
+  overflow: hidden;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #ebe9e9;
+  grid-gap: 10px;
+  height: 92vh;
+}
+
+.desh-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+}
+
+.desh-image img {
+  width: 40vw;
+  height: 60vh;
+  object-fit: cover;
+  object-position: 50% 50%;
+  border-radius: 9px;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+.desh-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 5rem;
+}
+
+.desh-text > h1 {
+  font-family: "Noto Serif Vithkuqi", serif;
+  font-size: 3.4rem;
+  color: rgb(114, 111, 111);
+  letter-spacing: 2px;
+  /* position: static; */
+  align-self: center;
+}
+
+.desh-text > i {
+  position: relative;
+
+  font-size: 0.95rem;
+
+  animation-name: easy;
+  animation-duration: 10s;
+
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+}
+
+@keyframes easy {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+
+  50% {
+    left: 23vw;
+    top: 0px;
+  }
+
+  100% {
+    left: 0px;
+    top: 0px;
+  }
+}
+
+/* fretures */
+.content img {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  border: none;
+  border-radius: 8px;
+  padding: 2px;
+}
+
+.freture{
+  background: #d4d2d2;
+  height: auto;
+  padding-top: 6rem;
+  
+position: relative;
+
+}
+.freture h1{
+  text-align: center;
+  margin-bottom: 2.4rem;
+  font-size: 2.6rem;
+  font-family: 'Montserrat', sans-serif;
+  text-shadow: 5px 6px 8px rgb(255, 255, 255);
+}
+.fretures-content {
+   display: flex;
+  justify-content: space-around;
+  align-self: center;
+}
+.content {
+  width: 20vw;
+  padding: 2rem 3rem;
+  border: 1px solid #cea135;
+  border-radius: 1.1rem;
+  background-color: #ddddddf2;
+  box-shadow: 16px 24px 23px rgba(0, 0, 0, 0.2);
+}
+.content > .text{
+  text-align: justify;
+  letter-spacing: .5px;
+  margin-top: 8px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight:300;
+  transition: all 1.8s smooth;
+}
+.content:hover{
+  box-shadow: 20px 30px 29px rgba(0, 0, 0, 0.3);
+}
+.copyright{
+  text-align: center;
+  margin-top: 4.7rem;
+  text-align: center;
+   font-size: 80%;
+
+
+}
